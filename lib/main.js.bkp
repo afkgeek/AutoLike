@@ -1,6 +1,13 @@
-require("sdk/tabs").on("pageshow", getURL);
+require("sdk/tabs").on("ready", nextStep);
+
+function nextStep(tab) {
+	tab.on("pageshow", getURL);
+	tab.on("load", getURL);
+	tab.on("activate", getURL);
+}
 
 function getURL(tab) {
+	console.log(tab.url);
 	checkURL(tab);
 	return 0;	
 }
