@@ -1,10 +1,7 @@
 ### NOTES ###
 
-Thoughts:
-	- Reduce down the unnecessary functions and group together checks
-	- Work out how to link in the jQuery and where
-	- Force the checks to the content scripts if possible
-	- work out how to parse current and next urls in jQuery/javascript
-	- work out if we have to detach from a tab?
-	- shrink script
-	- work out why not registering new event on page change
+Updates:
+	- Add settings page/menu
+	- Allow for specification of YouTubers to like
+	- Add more settings
+	- Add Running/Pause Options

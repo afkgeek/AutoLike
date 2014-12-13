@@ -1,8 +1,10 @@
-self.port.on("findButton", function(bearhunt) {
-	var btn = document.getElementById(bearhunt); // find the like button
-	if (btn === 'null') {
-		return 1;
-	} else {
-		self.port.emit("gotButton", btn); // return the button if found
-	}
-});
+//self.port.on("findButton", function(bid) {
+	var bid = "watch-like";
+	var btn = document.getElementById(bid); // find the like button
+	if (btn != 'null') {
+		if (btn.title === "Unlike") {
+		} else {
+			btn.click();
+		};
+	};
+//});
