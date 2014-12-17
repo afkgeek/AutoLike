@@ -21,7 +21,6 @@ ticker.PageMod({
 });
 
 function tabControl(tab) {
-	console.log(" #2 Attaching to tab ==> " + tab.url);
 	tab.attach({
 		contentScriptFile: brain.url("findLike.js"),
 		contentScriptWhen: "ready"

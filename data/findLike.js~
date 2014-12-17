@@ -1,6 +1,6 @@
-	var bid = "watch-like";
+	var sid = "watch-like";
 	console.log(" #3 Finding Button");
-	var btn = document.getElementById(bid);
+	var btn = document.getElementById(sid);
 	if (btn != 'null') {
 		console.log("Button has been found");
 		if (btn.title === "Unlike") {
