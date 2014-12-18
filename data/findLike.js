@@ -2,11 +2,11 @@
 	console.log(" #3 Finding Button");
 	var btn = document.getElementById(bid);
 	if (btn != 'null') {
-		console.log("Button has been found");
+		console.log(" #4 Button has been found ==> " + btn.title);
 		if (btn.title === "Unlike") {
 		} else {
 			btn.click();
-			console.log("CLICK");
+			console.log(" #5 CLICK");
 		}
 	}
 
