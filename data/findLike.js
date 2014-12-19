@@ -8,7 +8,7 @@ function menu() {
 	if (clicked) {
 	} else {
 		findButton();
-		menu();
+		//menu();
 	}
 }
 
@@ -34,6 +34,8 @@ function checkTitle(btn) {
 }
 
 function clickButton(btn) {
+	var tag = btn.getAttribute('onclick');
+	console.log(" Details: " + tag);
 	btn.click(); // Click the button
 	console.log(" #5 CLICK");
 }
