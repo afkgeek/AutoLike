@@ -1,15 +1,39 @@
+var clicked = false
 var bid = "watch-like"; // Set ID of Button to find
-console.log(" #3 Finding Button");
-var btn = document.getElementById(bid); // Search for button
-if (btn === 'null') {
-	// do nothing if not found
-} else {
-	// Continue if the button has been found
-	console.log(" #4 Button has been found ==> " + btn.title);
-	if (btn.title === "Unlike") {
-		// Do nothing if the video has been liked
+
+menu();
+
+function menu() {
+	console.log(" clicked => " + clicked);
+	if (clicked) {
 	} else {
-		btn.click(); // Click the button
-		console.log(" #5 CLICK");
+		findButton();
+		menu();
 	}
+}
+
+function findButton() {
+	console.log(" #3 Finding Button");
+	var btn = document.getElementById(bid); // Search for button
+	if (btn === 'null') {
+		// do nothing if not found
+		clicked = true;
+	} else {
+		// Continue if the button has been found
+		console.log(" #4 Button has been found ==> " + btn.title);
+		checkTitle(btn);
+	}
+}
+
+function checkTitle(btn) {
+	if (btn.title === "Unlike") {
+		clicked = true;
+	} else {
+		clickButton(btn);
+	}
+}
+
+function clickButton(btn) {
+	btn.click(); // Click the button
+	console.log(" #5 CLICK");
 }
