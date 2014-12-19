@@ -6,8 +6,10 @@ if (btn != 'null') {
 	console.log(" #4 Button has been found ==> " + btn.title);
 	if (btn.title === "Unlike") {
 		// Do nothing if the video has been liked
+		return 2;
 	} else {
 		btn.click(); // Click the button
 		console.log(" #5 CLICK");
+		return 0;
 	}
 }
