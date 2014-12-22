@@ -1,6 +1,10 @@
 var clicked = false
 var bid = "watch-like"; // Set ID of Button to find
 
+findButton();
+console.log(" ## break ## ");
+findButton();
+
 function menu() {
 	console.log(" clicked => " + clicked);
 	if (clicked) {
@@ -36,7 +40,3 @@ function clickButton(btn) {
 	btn.click(); // Click the button
 	console.log(" #5 CLICK");
 }
-
-menu();
-menu();
-menu();
